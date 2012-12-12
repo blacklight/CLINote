@@ -1,0 +1,21 @@
+CLINote - A command-line tool for synchronizing your ~/evernote local directory with your Evernote notebooks
+
+Usage:
+  * ##### Get an API key for Evernote here: http://dev.evernote.com/support/api_key.php #####
+  * Paste your API key in the "authToken" variable in this script
+  * Start this script. A folder named "~/evernote" will be created on your filesystem.
+    It will be populated with the notebooks and the notes on your Evernote account.
+    All the HTML notes will be converted to plain text
+  * Any directory you create under "~/evernote", will be considered as a new notebook, and synchronized with your account
+  * Any change you perform on the existing notes/notebooks, will be commited on your account as well
+  * Any note created under a notebook directory, will be committed on your account
+
+Dependencies:
+
+Evernote Python SDK (https://github.com/evernote/evernote-sdk-python)
+pyinotify (apt-get install python-pyinotify)
+Python BeautifulSoup (apt-get install python-beautifulsoup)
+
+by Fabio "BlackLight" Manganiello <blacklight86@gmail.com>
+Released under Apache License 2.0 and later
+
